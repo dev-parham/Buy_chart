@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Peyda";
+  src: url(./PeydaWeb-Bold.woff) format("woff");
+  src: url(./PeydaWeb-Bold.woff2) format("woff2");
+  src: url(./PeydaWeb-Regular.woff) format("woff");
+  src: url(./PeydaWeb-Regular.woff2) format("woff2");
+  src: url(./PeydaWebFaNum-Bold.woff) format("woff");
+  src: url(./PeydaWebFaNum-Bold.woff2) format("woff2");
+  src: url(./PeydaWebFaNum-Regular.woff) format("woff");
+  src: url(./PeydaWebFaNum-Regular.woff2) format("woff2");
+  src: url(./PeydaWebNoEn-Bold.woff) format("woff");
+  src: url(./PeydaWebNoEn-Bold.woff2) format("woff2");
+  src: url(./PeydaWebNoEn-Regular.woff) format("woff");
+  src: url(./PeydaWebNoEn-Regular.woff2) format("woff2");
+}
+
+body {
+  font-family: Peyda;
+  background-color: #fff;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.insideText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 8rem;
+}
+
+.packageName {
+  color: goldenrod;
+  text-shadow: 0.05rem 0.05rem #000000;
+  font-weight: 800;
+}
+
+.priceBolder {
+  font-weight: 800;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.centralized {
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonFont {
+  color: var(--gray, #3f3f40);
+  font-family: Peyda;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.buttonFontActive {
+  color: var(--moca, #d8ab76);
+  font-family: Peyda;
+  font-size: 1;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.chart {
+  flex-direction: row;
+  margin-top: 0.5rem;
+  background-color: #e7cdaf;
+}
+
+.normalButtom {
+  border-radius: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.link span {
+  text-decoration: none;
+  color: var(--gray, #3f3f40);
+  cursor: pointer;
+}
+
+.link span:hover {
+  color: rgb(77, 77, 193);
+}
+
+.link span:focus {
+  color: rgb(53, 158, 244);
+}
+
+.product_text {
+  font-size: 18px;
+  align-self: center;
+  color: black;
+}
+
+.card {
+  position: relative;
+  transition: all 0.5 ease-in-out;
+  width: 20%;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    position: relative;
+    transition: all 0.5 ease-in-out;
+    width: 30%;
+    padding: 0.5rem;
+  }
+  .card_text {
+    font-family: Peyda;
+    font-size: 10px;
+    align-self: center;
+    color: black;
+  }
+  .insideText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    position: relative;
+    transition: all 0.5 ease-in-out;
+    width: 25%;
+    padding: 0.5rem;
+  }
+  .card_text {
+    font-family: Peyda;
+    font-size: 20px;
+    align-self: center;
+    color: black;
+  }
+  .insideText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 8rem;
+  }
+}
+
+.card_image {
+  display: block;
+  width: 100%;
+}
+
+.underline {
+  text-decoration: underline;
+  color: navy;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.card_overlay {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.card_text {
+  font-family: Peyda;
+  font-size: 13px;
+  align-self: center;
+  color: black;
+}
+
+.card:hover .card_overlay {
+  transition: all 1s;
+  opacity: 0.8;
+}
+
+#underConstruction {
+  width: 50%;
+}

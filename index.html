@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="طراحی بازی اسکیپ روم" content="HTML, CSS, JavaScript" />
+    <meta name="Game designing" content="Design and create escape room" />
+    <title>طراحی بازی اسکیپ‌روم</title>
+    <link rel="icon" type="image/x-icon" href="./fav.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="cart()">
+    <!-- Navigation bar Section -->
+    <div>
+      <div class="flex centralized">
+        <nav class="link">
+          <span class="normalButtom buttonFont otherPages">پروفایل</span>
+          <span id="mainPage" class="normalButtom buttonFont otherPages"
+            >صفحه اصلی</span
+          >
+          <span class="normalButtom buttonFont otherPages">محصولات</span>
+          <span class="normalButtom buttonFont otherPages"> تماس با ما</span>
+        </nav>
+      </div>
+      <div class="chart flex link centralized">
+        <span id="buyChart">خالی :</span>
+        <span>سبد خرید</span>
+      </div>
+    </div>
+    <img id="underConstruction" class="hidden" src="./underConstruction.png" />
+    <!-- Product Section -->
+    <div id="mainPartOfThePage" class="flex centralized">
+      <div id="product1" class="card">
+        <img class="card_image" src="./asset.jpeg" title="بسته برنزی" />
+        <div class="card_overlay">
+          <div class="card_text textAligner insideText">
+            <span class="packageName">بسته برنزی</span>
+            <span
+              >قیمت:
+              <span id="boronz" class="priceBolder uniquePrice">670000</span>
+              تومان</span
+            >
+            <span>تحویل: یک هفته</span>
+            <span
+              ><span class="priceBolder cardCount counter">0</span> :تعداد
+              انتخاب شده</span
+            >
+            <span id="clickToAdd">برای افزودن کلیک کنید</span>
+            <span class="underline hidden toDelete">حذف از سبد خرید</span>
+          </div>
+        </div>
+      </div>
+      <div id="product2" class="card">
+        <img class="card_image" src="./bouajram.jpg" title="بسته نقره‌ای" />
+        <div class="card_overlay">
+          <div class="card_text textAligner insideText">
+            <span class="packageName">بسته نقره‌ای</span>
+            <span
+              >قیمت:
+              <span id="noghre" class="priceBolder uniquePrice">899000</span>
+              تومان</span
+            >
+            <span>تحویل: سه هفته</span>
+            <span
+              ><span class="priceBolder cardCount counter">0</span> :تعداد
+              انتخاب شده</span
+            >
+            <span id="clickToAdd">برای افزودن کلیک کنید</span>
+            <span class="underline hidden toDelete">حذف از سبد خرید</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card_image" src="./dark.jpg" title="بسته طلایی" />
+        <div class="card_overlay">
+          <div class="card_text textAligner insideText">
+            <span class="packageName">بسته طلایی</span>
+            <span
+              >قیمت:
+              <span id="talaei" class="priceBolder uniquePrice">1200000</span>
+              تومان</span
+            >
+            <span>تحویل: یک ماه</span>
+            <span
+              ><span class="priceBolder cardCount counter">0</span> :تعداد
+              انتخاب شده</span
+            >
+            <span id="clickToAdd">برای افزودن کلیک کنید</span>
+            <span class="underline hidden toDelete">حذف از سبد خرید</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card_image" src="./Hungry-Hippos.jpg" title="بسته ویژه" />
+        <div class="card_overlay">
+          <div class="card_text textAligner insideText">
+            <span class="packageName">بسته ویژه</span>
+            <span
+              >قیمت:
+              <span id="vije" class="priceBolder uniquePrice">1500000</span>
+              تومان</span
+            >
+            <span>تحویل: یک ماه و نیم</span>
+            <span
+              ><span class="priceBolder cardCount counter">0</span> :تعداد
+              انتخاب شده</span
+            >
+            <span id="clickToAdd">برای افزودن کلیک کنید</span>
+            <span class="underline hidden toDelete">حذف از سبد خرید</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card_image" src="./nightmares.jpg" title="بسته انحصاری" />
+        <div class="card_overlay">
+          <div class="card_text textAligner insideText">
+            <span class="packageName">بسته انحصاری</span>
+            <span
+              >قیمت:
+              <span id="enhesari" class="priceBolder uniquePrice">1850000</span>
+              تومان</span
+            >
+            <span>تحویل: دو ماه</span>
+            <span
+              ><span class="priceBolder cardCount counter">0</span> :تعداد
+              انتخاب شده</span
+            >
+            <span id="clickToAdd">برای افزودن کلیک کنید</span>
+            <span class="underline hidden toDelete">حذف از سبد خرید</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card_image" src="./reimagines.jpg" title="بسته جامع" />
+        <div class="card_overlay">
+          <div class="card_text textAligner insideText">
+            <span class="packageName">بسته جامع</span>
+            <span
+              >قیمت:
+              <span id="jame" class="priceBolder uniquePrice">2200000</span>
+              تومان</span
+            >
+            <span>تحویل: سه ماه</span>
+            <span
+              ><span class="priceBolder cardCount counter">0</span> :تعداد
+              انتخاب شده</span
+            >
+            <span id="clickToAdd">برای افزودن کلیک کنید</span>
+            <span class="underline hidden toDelete">حذف از سبد خرید</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pagination Section -->
+    <div class=""></div>
+
+    <!-- Footer Section -->
+    <div class=""></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
